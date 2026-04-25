@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grocery Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>🛒 Fresh Grocery</h2>
+    <a href="/logout">Logout</a>
+</div>
+
+<h3>Welcome, {{ user }}</h3>
+
+<div class="products">
+    <div class="card">
+        <span>🍎</span>
+        Apples
+        <p>₹100</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <span>🥛</span>
+        Milk
+        <p>₹50</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <span>🍞</span>
+        Bread
+        <p>₹40</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <span>🥦</span>
+        Vegetables
+        <p>₹80</p>
+        <button>Add to Cart</button>
+    </div>
+</div>
+
+</body>
+</html>
